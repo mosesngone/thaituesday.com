@@ -1,0 +1,53 @@
+///*---------------------------------------------------------------------*/
+@mixin border-radius($topleft:5px,$topright:null,$bottomright:null,$bottomleft:null) {
+  @if $topright != null and $bottomright != null and $bottomleft != null {
+    border-top-left-radius: $topleft;
+    border-top-right-radius: $topright;
+    border-bottom-right-radius: $bottomright;
+    border-bottom-left-radius: $bottomleft;
+    -moz-border-radius-topleft: $topleft;
+    -moz-border-radius-topright: $topright;
+    -moz-border-radius-bottomright: $bottomright;
+    -moz-border-radius-bottomleft: $bottomleft;
+    -webkit-border-top-left-radius: $topleft;
+    -webkit-border-top-right-radius: $topright;
+    -webkit-border-bottom-right-radius: $bottomright;
+    -webkit-border-bottom-left-radius: $bottomleft;
+  } @else {
+    -webkit-border-radius:$topleft;
+    -moz-border-radius:$topleft;
+    border-radius:$topleft;
+  }
+}
+///*---------------------------------------------------------------------*/
+@mixin box-shadow($first, $second:null) {
+   @if $second != null {
+      -webkit-box-shadow:$first,$second;
+      -moz-box-shadow:$first,$second;
+      box-shadow:$first,$second;
+   } @else {
+      -webkit-box-shadow:$first;
+      -moz-box-shadow:$first;
+      box-shadow:$first;
+   }
+}
+
+///*---------------------------------------------------------------------*/
+@mixin transition($property,$delay:.2s,$easing:linear) {
+  -webkit-transition:$property $delay $easing;
+  -moz-transition:$property $delay $easing;
+  -o-transition:$property $delay $easing;
+  -ms-transition:$property $delay $easing;
+  transition:$property $delay $easing;
+}
+
+///*---------------------------------------------------------------------*/
+@mixin background-gradient($top_color:#fff,$bottom_color:#e6e6e6) {
+   background-image: -webkit-gradient(linear, 0 0, 0 100%, from($top_color), color-stop(25%, $top_color), to($bottom_color));
+   background-image: -webkit-linear-gradient($top_color, $top_color 25%, $bottom_color);
+   background-image: -moz-linear-gradient(top, $top_color, $top_color 25%, $bottom_color);
+   background-image: -ms-linear-gradient($top_color, $top_color 25%, $bottom_color);
+   background-image: -o-linear-gradient($top_color, $top_color 25%, $bottom_color);
+   background-image: linear-gradient($top_color, $top_color 25%, $bottom_color);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$top_color}', endColorstr='#{$bottom_color}', GradientType=0);
+}

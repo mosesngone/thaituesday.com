@@ -1,0 +1,20 @@
+@import "fonts", "mixins", "bootstrap", "normalize.css";
+
+$brand_white:  rgb(240,240,240);
+$brand_orange: rgb(235,136,83);
+$brand_pink:   rgb(229,87,134);
+$brand_purple: rgb(105,77,182);
+$brand_yellow: rgb(217,194,85);
+$brand_red:    rgb(229,75,65);
+$brand_green:  rgb(134,182,52);
+$brand_blue:   rgb(81,180,246);
+$brand_grey:   rgba(255,255,255,.8);
+$alpin: 'alpin', 'arial narrow', 'helvetica neue', helvetica, arial, sans-serif;
+
+body {
+   background:#efefef;
+   color:#222;
+   font: normal 100%/1.5 'proxima-nova','helvetica neue',helvetica,sans-serif;
+   text-shadow:1px 1px 1px #fff;
+}
+
