@@ -4344,10 +4344,20 @@ button.close {
   }
 }
 @import url(normalize.css);
-/* line 14, style.scss */
+/* line 5, style.scss */
 body {
-  background: #efefef;
-  color: #222;
+  background: black url(../img/background.jpg) center center fixed no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #eee;
   font: normal 100%/1.5 "proxima-nova", "helvetica neue", helvetica, sans-serif;
-  text-shadow: 1px 1px 1px #fff;
+  margin-top: 2em;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* line 15, style.scss */
+h1 {
+  color: #fc0;
+  font-weight: bold;
+  font-size: 3em;
 }
