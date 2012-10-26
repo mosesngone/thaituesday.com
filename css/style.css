@@ -4347,6 +4347,7 @@ button.close {
 /* line 5, style.scss */
 body {
   background: black url(../img/background.jpg) center center fixed no-repeat;
+  /* Photo Credit: http://www.flickr.com/photos/missy-and-the-universe/3232059554/ */
   -moz-background-size: cover;
   background-size: cover;
   color: #eee;
@@ -4355,7 +4356,7 @@ body {
   text-shadow: 1px 1px 1px #000;
 }
 
-/* line 15, style.scss */
+/* line 16, style.scss */
 h1 {
   color: #fc0;
   font-weight: bold;
