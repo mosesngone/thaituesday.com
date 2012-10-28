@@ -1,6 +1,4 @@
-@import "fonts", "mixins", "bootstrap", "normalize.css";
-
-$alpin: 'alpin', 'arial narrow', 'helvetica neue', helvetica, arial, sans-serif;
+@import "mixins", "bootstrap", "normalize.css";
 
 body {
    background: #000 url(../img/background.jpg) center center fixed no-repeat;
@@ -8,9 +6,29 @@ body {
    -moz-background-size: cover;
    background-size: cover;
    color:#eee;
-   font: normal 100%/1.5 'proxima-nova','helvetica neue',helvetica,sans-serif;
-   margin-top:2em;
+   font: normal 100%/1.5 'helvetica neue',helvetica,sans-serif;
    text-shadow:1px 1px 1px #000;
 }
 
-h1 { color:#fc0; font-weight: bold; font-size: 3em; }
+h1 { 
+   color:#fc0; 
+   font-family:'Dr Sugiyama', cursive;
+   font-size:6em;
+   font-weight:bold;  
+   margin:1em 0;
+}
+
+section { 
+   color:white;
+   font-size:1.35em;
+   font-weight:bold;
+}
+
+#info {
+   background:rgba(0,0,0,.75);
+   @include border-radius(10px);
+   @include box-shadow(0 0 45px #fc0);
+   padding:.5em 2em 1.5em;
+}
+
+.adr { font-size:.85em; }

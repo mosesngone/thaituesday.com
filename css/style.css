@@ -1,27 +1,3 @@
-@font-face {
-  font-family: 'alpin';
-  src: url("../font/cgalpingothicno3-webfont.eot");
-  src: url("../font/cgalpingothicno3-webfont.eot?#iefix") format("embedded-opentype"), url("../font/cgalpingothicno3-webfont.woff") format("woff"), url("../font/cgalpingothicno3-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'architect';
-  src: url("../font/ArchitectsDaughter-webfont.eot");
-  src: url("../font/ArchitectsDaughter-webfont.eot?#iefix") format("embedded-opentype"), url("../font/ArchitectsDaughter-webfont.woff") format("woff"), url("../font/ArchitectsDaughter-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'jenna';
-  src: url("../font/JennaSue-webfont.eot");
-  src: url("../font/JennaSue-webfont.eot?#iefix") format("embedded-opentype"), url("../font/JennaSue-webfont.woff") format("woff"), url("../font/JennaSue-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /*
  * Bootstrap v2.0.3
  *
@@ -199,7 +175,7 @@ textarea {
 /* line 131, bootstrap.scss */
 body {
   margin: 0;
-  font-family: 'proxima-nova', 'helvetica neue', helvetica, sans-serif;
+  font-family: 'helvetica neue', helvetica, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #eeeeee;
@@ -214,7 +190,7 @@ a {
 
 /* line 143, bootstrap.scss */
 a:hover {
-  color: #5a7a23;
+  color: #fc0;
   text-decoration: underline;
 }
 
@@ -4344,21 +4320,46 @@ button.close {
   }
 }
 @import url(normalize.css);
-/* line 5, style.scss */
+/* line 3, style.scss */
 body {
   background: black url(../img/background.jpg) center center fixed no-repeat;
   /* Photo Credit: http://www.flickr.com/photos/missy-and-the-universe/3232059554/ */
   -moz-background-size: cover;
   background-size: cover;
   color: #eee;
-  font: normal 100%/1.5 "proxima-nova", "helvetica neue", helvetica, sans-serif;
-  margin-top: 2em;
+  font: normal 100%/1.5 "helvetica neue", helvetica, sans-serif;
   text-shadow: 1px 1px 1px #000;
 }
 
-/* line 16, style.scss */
+/* line 13, style.scss */
 h1 {
   color: #fc0;
+  font-family: 'Dr Sugiyama', cursive;
+  font-size: 6em;
   font-weight: bold;
-  font-size: 3em;
+  margin: 1em 0;
+}
+
+/* line 21, style.scss */
+section {
+  color: white;
+  font-size: 1.35em;
+  font-weight: bold;
+}
+
+/* line 27, style.scss */
+#info {
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 45px #ffcc00;
+  -moz-box-shadow: 0 0 45px #ffcc00;
+  box-shadow: 0 0 45px #ffcc00;
+  padding: .5em 2em 1.5em;
+}
+
+/* line 34, style.scss */
+.adr {
+  font-size: .85em;
 }
