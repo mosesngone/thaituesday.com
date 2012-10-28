@@ -4356,10 +4356,15 @@ section {
   -webkit-box-shadow: 0 0 45px #ffcc00;
   -moz-box-shadow: 0 0 45px #ffcc00;
   box-shadow: 0 0 45px #ffcc00;
-  padding: .5em 2em 1.5em;
+  padding: .5em 2em;
 }
 
 /* line 34, style.scss */
 .adr {
   font-size: .85em;
+}
+
+/* line 36, style.scss */
+footer {
+  font-size: .75em;
 }
